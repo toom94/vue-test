@@ -13000,7 +13000,9 @@ const allowedGuesses = [
   'zygal',
   'zygon',
   'zymes',
-  'zymic'
+  'zymic',
+  'mysza',
+  'paula'
 ]
 
 export const allWords = [...answers, ...allowedGuesses]
