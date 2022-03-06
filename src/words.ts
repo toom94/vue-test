@@ -13001,8 +13001,13 @@ const allowedGuesses = [
   'zygon',
   'zymes',
   'zymic',
-  'mysza',
-  'paula'
+  'paula',
+  'wiatr',
+  'kwiat',
+  'kefir',
+  'fotka',
+  'laski',
+  'lisek'
 ]
 
 export const allWords = [...answers, ...allowedGuesses]
