@@ -75,7 +75,7 @@ function completeRow() {
     const guess = currentRow.map((tile) => tile.letter).join('')
     if (!allWords.includes(guess) && guess !== answer) {
       shake()
-      showMessage(`Nie ma na liście`)
+      showMessage(`Słowa nie ma na liście`)
       return
     }
 
@@ -113,7 +113,7 @@ function completeRow() {
       setTimeout(() => {
         grid = genResultGrid()
         showMessage(
-          ['Genius', 'Magnificent', 'Impressive', 'Splendid', 'Great', 'Phew'][
+          ['Geniusz', 'Wspaniale', 'Robi wrażenie', 'Znakomicie', 'Dobrze', 'Uff'][
             currentRowIndex
           ],
           -1
@@ -129,12 +129,12 @@ function completeRow() {
     } else {
       // game over :(
       setTimeout(() => {
-        showMessage(answer.toUpperCase(), -1)
+        showMessage('Nie udało się')
       }, 1600)
     }
   } else {
     shake()
-    showMessage('Not enough letters')
+    showMessage('Za mało liter')
   }
 }
 
